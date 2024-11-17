@@ -6,12 +6,9 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter({
-			fallback: 'index.html',
-			strict: false
-		}),
-		prerender: {
-			entries: ['/']
+		adapter: adapter(),
+		paths: {
+			base: ''
 		}
 	}
 };
