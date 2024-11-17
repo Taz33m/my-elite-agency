@@ -257,6 +257,89 @@
           </div>
         </div>
       </div>
+      <div class="mt-12 flex items-center justify-center gap-4 opacity-80">
+        <span class="text-sm font-light tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-gray-200 via-gray-400 to-gray-200">
+          AS FEATURED ON
+        </span>
+        <a 
+          href="https://www.nyitnests.org/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="hover:opacity-80 transition-opacity"
+        >
+          <img src="/NESTS.png" alt="NESTS" class="h-5" />
+        </a>
+      </div>
+    </section>
+  
+    <section class="relative py-24 overflow-hidden" id="process">
+      <div class="absolute inset-0 bg-[#0A0F1C]"></div>
+      
+      <!-- Background effects matching other sections -->
+      <div class="absolute inset-0 opacity-30">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(14,20,36,0)_0%,rgba(14,20,36,1)_100%)]"></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-4xl md:text-6xl font-bold text-center mb-6">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-white">
+              How We Build Your MVP
+            </span>
+          </h2>
+          
+          <p class="text-xl text-gray-300 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
+            From concept to launch in weeks, not months. Our proven process delivers results.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+            {#each [
+              {
+                step: "1",
+                title: "Discovery Call",
+                description: "We discuss your vision, requirements, and timeline to create a tailored development plan.",
+                duration: "20 mins"
+              },
+              {
+                step: "2",
+                title: "Rapid Development",
+                description: "Our expert team builds your MVP using cutting-edge technology and agile methodology.",
+                duration: "1-3 weeks"
+              },
+              {
+                step: "3",
+                title: "Launch & Iterate",
+                description: "We deploy your MVP and provide ongoing support to help you gather user feedback and scale.",
+                duration: "Ongoing"
+              }
+            ] as step}
+              <div class="bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10 hover:border-blue-500/50 transition-colors">
+                <div class="flex items-center gap-4 mb-4">
+                  <span class="text-blue-400 text-4xl font-bold">{step.step}</span>
+                  <h3 class="text-xl font-semibold text-white">{step.title}</h3>
+                </div>
+                <p class="text-gray-400 mb-4">{step.description}</p>
+                <p class="text-sm text-blue-400">Duration: {step.duration}</p>
+              </div>
+            {/each}
+          </div>
+
+          <div class="mt-16 text-center">
+            <a 
+              href="https://cal.com/tazeem" 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-medium transition-colors"
+            >
+              Book a Discovery Call
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   
     <ProjectShowcase />

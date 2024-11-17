@@ -52,7 +52,7 @@
     <div class="max-w-7xl mx-auto">
       <h2 class="text-4xl md:text-6xl font-bold text-center mb-6">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-white">
-          Transforming Ideas into Digital Reality
+          Transforming Ideas into Real Results
         </span>
       </h2>
       <p class="text-xl text-gray-300 text-center mb-16 max-w-3xl mx-auto leading-relaxed">
